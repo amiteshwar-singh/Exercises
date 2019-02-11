@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<style>
+
+
+
+html *
+{
+   font-size: 1.2em ;
+
+   font-family: Arial;
+}
+
+
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width:25%;
+  background-color: #009999;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+
+border:1px solid;
+
+ background-color: white;
+  padding: 10px;
+  margin: 0px 900px;
+}
+
+#select{
+background-color:  #009999;
+}
+
+.one{
+position:relative;
+margin-top:30px;
+background-color: grey;
+ border-radius: 5px;
+padding:30px;
+font-size:2em;
+}
+
+
+.last{
+
+align="right";
+ border-radius: 5px;
+background-color: grey;
+align:right;
+}
+
+.first{
+
+font-size:2em;
+padding:30px;
+margin:15px;
+border:none;
+text-align:left;
+}
+
+</style>
+
+
+
+<body>
+
+<div class="first">
+ <font color="#009999;">To The New</font> 
+<hr width="75%">
+</div>
+
+
+
+
+<div class ="one">
+
+Bug Report
+
+
+</div>
+
+<div>
+
+	<label >Title*</label>
+    <input type="text" id="title" name="firstname" placeholder="Your name..">
+
+    <label for="description">Description*</label>
+    <input type="text" id="description" name="desc" placeholder="Enter Description">
+
+
+    <label for="OS">Operating System </label>
+    <select  id="select">
+		<option >Windows 10</option>
+		<option >Linux</option>
+		<option >Mac OS</option>
+    </select>
+	
+	
+	
+	<label >Product </label>
+    <select id="select" >
+		<option >Product1</option>
+		<option >Product2</option>
+	</select>
+	
+	<label >Version*</label>
+    <input type="text"  placeholder="Enter Version">
+	
+	
+	<label>Licence</label><br>
+		<input type="radio" > Free
+		<input type="radio" > Business<br><br>
+		
+		
+		<label>Severity- </label>
+    <select id="select">
+		<option >Critical </option>
+		<option >Normal</option>
+		<option >Emergency</option>
+    </select>
+	
+	<label>Attachments</label><br>
+	<input type="file"  value ="Choose file" placeholder="Choose file">
+	
+
+		
+		
+		
+	</div>
+	<div class ="last">
+	
+	  <input type="submit" value="Send">
+	</div>
+	
+	</body>
